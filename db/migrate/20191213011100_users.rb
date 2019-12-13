@@ -1,4 +1,10 @@
 class Users < ActiveRecord::Migration
-  def change
+ def change
+    create_table :dogs do |t|
+      t.string :name
+      t.string :email 
+      t.string :password
+    end
   end
+ 
 end
